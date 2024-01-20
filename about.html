@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #555;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 80px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .about-content {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive navigation */
+        @media screen and (max-width: 600px) {
+            nav ul {
+                display: none;
+            }
+
+            nav a.icon {
+                float: right;
+                display: block;
+            }
+
+            .icon {
+                background: #333;
+                color: white;
+                padding: 10px 20px;
+                text-align: center;
+                cursor: pointer;
+                display: none;
+            }
+        }
+    </style>
+    <title>Your University - About Us</title>
+</head>
+<body>
+    <header>
+        <!-- Your header content here -->
+        <img src="your-logo.png" alt="University Logo">
+    </header>
+
+    <nav>
+        <!-- Your navigation content here -->
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">☰</a>
+    </nav>
+
+    <div class="about-content">
+        <h2>About Us</h2>
+        <img src="about-image.jpg" alt="University Campus">
+        <p>Welcome to [Your University], where excellence is nurtured and knowledge is celebrated.</p>
+        <p>Our commitment to providing a world-class education experience is reflected in our state-of-the-art facilities, dedicated faculty, and a diverse community of learners.</p>
+        <p>At [Your University], we foster an environment that encourages curiosity, critical thinking, and innovation. Our students embark on a journey of academic and personal growth, preparing them for success in a rapidly evolving world.</p>
+    </div>
+
+    <!-- Add additional sections, content, and scripts as needed -->
+
+    <script>
+        // Toggle responsive navigation
+        function toggleNav() {
+            const navUl = document.querySelector('nav ul');
+            navUl.style.display = (navUl.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
